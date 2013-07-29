@@ -1,0 +1,39 @@
+/* 
+    Document   : styles-story
+    Created on : Jul 2, 2013, 12:55:35 AM
+    Author     : 
+    Description:
+        Individual story styles.
+*/
+
+.story-original {
+    float: left;
+    width: 70%;
+    height: 350px;
+    background: orange;
+    clear: both;
+}
+
+.story-add {
+    background: yellowgreen;
+    height: 40px;
+    float: right;
+    width: 25%;
+}
+
+.story-originalSidebar {
+    background: aqua;
+    float: left;
+    width: 30%;
+    height: 350px;
+}
+
+#story-original {
+    color: cadetblue;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.story-originalComments {
+
+}

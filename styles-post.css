@@ -1,0 +1,80 @@
+/* 
+    Document   : styles-post
+    Created on : Jul 1, 2013, 4:20:09 PM
+    Author     : 
+    Description:
+        Post-specific css rules.
+*/
+
+.post-save {
+    /* Insert image later: Arrow */
+    width: 30px;
+    height: 30px;
+    float: left;
+    background: red;
+}
+
+.post-spacer {
+    height: 90px;
+}
+
+#post-title {
+    font-family: sans-serif;
+    font-size: 22px;
+    color: black;
+    margin-right: 20px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+#post-location {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: lightslategray;
+    margin-left: 40px;
+}
+
+.post-image {
+    width: 280px;
+    height: 180px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background: blue;
+}
+.post-options {
+    width: 280px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#post-options {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 12px;
+}
+
+.post-addsource {
+    float: left;
+    width: 75px;
+    margin-right: 5px;
+}
+
+.post-comment {
+    float: left;
+    width: 70px;
+    margin-right: 5px;
+}
+
+.post-share {
+    float: left;
+    width: 60px;
+    margin-right: 5px;
+}
+
+.post-report {
+    color: red;
+    float: left;
+    width: 60px;
+}

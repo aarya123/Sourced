@@ -1,0 +1,105 @@
+/* 
+    Document   : styles
+    Created on : Jul 1, 2013, 2:31:13 PM
+    Author     : 
+    Description:
+        Main Page Stylesheet.
+*/
+
+@import "styles-post.css";
+@import "styles-story.css";
+
+.container {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: lightcyan;
+}
+
+.top-banner {
+    margin-bottom: 10px;
+    float: none;
+}
+
+.title {
+    float: left;
+}
+
+#header {
+    font-family: serif;
+    font-size: 80px;
+}
+
+#subheader {
+    font-family: serif;
+    font-size: 30px;
+    font-style: italic;
+    margin-top: -20px;
+    margin-left: 10px;
+}
+
+.login {
+    margin-left: 70%;
+    width: 30%;
+    height: 100px;
+    background: purple;
+}
+
+.filter-container {
+    clear: both;
+    width: 800px;
+    margin-top: 15px;
+}
+
+.filter {
+    float: left;
+    width: 198px;
+    border: buttonface;
+    border-width: 1px;
+    border-style: groove;
+    text-align: center;
+    vertical-align: bottom;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.page-title {
+    clear: both;
+    float: left;
+    margin-bottom: 10px;
+}
+
+#page-title {
+    font-family: sans-serif;
+    font-size: 50px;
+}
+
+.submit-story {
+    background: yellowgreen;
+    height: 40px;
+    float: right;
+    width: 25%;
+}
+
+.post-container {
+    clear: both;
+}
+
+.post {
+    float: left;
+    width: 300px;
+    height: 320px;
+    border: lightblue;
+    border-width: 1px;
+    border-style: outset;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding-bottom: 5px;
+}
+
+.footer {
+    clear: both;
+    height: 100px;
+}
