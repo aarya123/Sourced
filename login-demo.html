@@ -1,0 +1,97 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <title>Login Demo</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script>
+            function sanitizeInput(str) {
+                str = str.replace("'", "''");
+                str = str.replace("/", "//");
+                return str;
+            }
+            function isAlphanumeric(str) {
+                if (/^[0-9A-Za-z]+$/.test(str))
+                    return true;
+                else
+                    return false;
+            }
+            function isValidEmail(str) {
+                if (/^[A-z0-9!#$%&*+/=?^_'`{|}~-]+(?:\.[A-z0-9!#$%&*+/=?^_'`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])+$/.test(str))
+                    return true;
+                else
+                    return false;
+            }
+            function isValidPassword(str) {
+                if (/^[A-z0-9!#$%&*+/=?^_'`{|}~-]+$/.test(str))
+                    return true;
+                else
+                    return false;
+            }
+            function login(username, password) {
+                if (username === '') {
+                    alert('Username Cannot Be Blank');
+                } else if (password === '') {
+                    alert('Password Cannot Be Blank');
+                } else if (!isAlphanumeric(username)) {
+                    alert('Username Contains Invalid Characters\n' + username);
+                } else if (!isValidPassword(password)) {
+                    alert('Password Contains Invalid Characters\n' + password);
+                } else {
+                    alert("Logging in: " + sanitizeInput(username) + ", " + sanitizeInput(password));
+                }
+            }
+            function register(username, email, password, passwordc) {
+                    if (username === '') {
+                        alert('Username Cannot Be Blank');
+                    } else if (email === '') {
+                        alert('Email Cannot Be Blank');
+                    } else if (password === '') {
+                        alert('Password Cannot Be Blank');
+                    } else if (passwordc === '') {
+                        alert('PasswordConfirm Cannot Be Blank');
+                    } else if (password !== passwordc) {
+                        alert('Passwords Do Not Match');
+                    } else if (!isAlphanumeric(username)) {
+                        alert('Username Contains Invalid Characters\n' + username);
+                    } else if (!isValidEmail(email)) {
+                        alert('Invalid Email\n' + email);
+                    } else if (!isValidPassword(password)) {
+                        alert('Password Contains Invalid Characters\n' + password);
+                    } else {
+                        alert("Register: " + sanitizeInput(username) + ", " + sanitizeInput(email) + ", " + sanitizeInput(password));
+                    }
+            }
+        </script>
+    </head>
+    <body>
+        <center><h1>Login Template</h1></center>
+        <div id="login">
+            <form id="frm_login">
+                <h2>Login</h2>
+                Login: <input type="text" name="txt_username"><br>
+                Password: <input type="password" name="txt_password"><br>
+                <input type="submit" value="Login" onclick="
+                        login(txt_username.value, txt_password.value);">
+            </form>
+        </div>
+        <div id="register">
+            <h2>Register</h2>
+            <form id="frm_register">
+                Username: <input type="text" name="txt_username"><br>
+                E-mail: <input type="text" name="txt_email"><br>
+                Password: <input type="password" name="txt_password"><br>
+                Confirm Password: <input type="password" name="txt_passwordconfirm"><br>
+                <input type="submit" value="Register" onclick="
+                        register(txt_username.value, txt_email.value, txt_password.value, txt_passwordconfirm.value);">
+            </form>
+        </div>
+    </body>
+</html>
