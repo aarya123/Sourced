@@ -9,31 +9,41 @@
 .story-original {
     float: left;
     width: 70%;
-    height: 350px;
+    height: 340px;
     background: orange;
     clear: both;
+    margin-bottom: 15px;
 }
 
 .story-add {
-    background: yellowgreen;
-    height: 40px;
     float: right;
-    width: 25%;
+    background: yellowgreen;
+    margin-top: 10px;  
+    height: 40px;
+    width: 275px;
 }
 
 .story-originalSidebar {
     background: aqua;
     float: left;
     width: 30%;
-    height: 350px;
+    height: 340px;
 }
 
 #story-original {
-    color: cadetblue;
+    color: black;
     font-family: sans-serif;
-    font-size: 12px;
+    font-size: 24px;
 }
 
 .story-originalComments {
+    
+}
 
+.story-source {
+    background: lightsalmon;
+    clear: both;
+    width: 100%;
+    height: 200px;
+    margin-top: 15px;
 }

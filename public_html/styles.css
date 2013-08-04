@@ -41,8 +41,8 @@
 }
 
 .login {
-    margin-left: 70%;
-    width: 30%;
+    float: right;
+    width: 275px;
     height: 100px;
     background: purple;
 }
@@ -80,7 +80,8 @@
     background: yellowgreen;
     height: 40px;
     float: right;
-    width: 25%;
+    width: 275px;
+    margin-top: 10px;
 }
 
 .post-container {
@@ -101,5 +102,5 @@
 
 .footer {
     clear: both;
-    height: 100px;
+    margin-top: 15px;
 }
