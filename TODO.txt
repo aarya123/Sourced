@@ -1,0 +1,36 @@
+#1. WHAT THE HELL IS THE NAME GOING TO BE? :o
+
+~~ FRONTEND ~~
+
+POSTS
+- Figure out post layout
+	+ Different sizes?
+	+ Different type depending on popularity?
+	+ Card vs. Horizontal Stretch vs. Table Layout
+- Allow users to interact with posts
+- Figure out how to embed objects inline
+- Sort out post image collection / galleries
+
+DESIGN
+- Find graphic designer
+- Implement CSS3 design techniques
+- Title & Icon
+
+~~ BACKEND ~~
+
+LOGIN
+- Database link
+	+ Post Database
+		+ Users can add posts to database
+	+ User Database
+		+ User login validates to user database
+		+ Users can register with user database
+- SQL Injection Prevention
+	+ Decreased DB access rights
+	+ Pacified user input [sanitizeInput]
+	+ Set R/W functions
+	  -> NO Dynamic SQL
+	+ Hashed & Salted User Data
+	+ Hashed & Salted Connection Data
+	+ Turn off error messages & Debug mode
+	+ More info: http://msdn.microsoft.com/en-us/magazine/cc163917.aspx
